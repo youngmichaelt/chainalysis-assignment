@@ -11,6 +11,14 @@ body {
     /* text-align: center; */
 }
 
+button {
+    font-family: Delicious;
+    font-weight: bolder;
+    height: 50px;
+    width: 250px;
+    font-size: 25px;
+}
+
 header {
     font-size: 72px;
 }
@@ -23,10 +31,18 @@ header {
     margin-bottom: 120px;
 }
 
-.exchange {
+.buy {
     display: inline-block;
     vertical-align: top;
     margin: 75px;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.exchange {
+    display: inline-block;
+    vertical-align: top;
+    margin: 10px;
     margin-bottom: 10px;
     font-size: 20px;
 }
@@ -36,5 +52,5 @@ header {
     vertical-align: top;
     margin-top: 110px;
     margin-bottom: 10px;
-    font-size: 20px;
+    font-size: 15px;
 }

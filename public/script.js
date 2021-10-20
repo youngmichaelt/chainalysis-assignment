@@ -1,3 +1,21 @@
+let crypto = "BTC";
+
+function whichCrypto(option) {
+    if (option == 1) {
+        crypto = "ETH";
+        var button = document.getElementById("switch").setAttribute("onClick", "javascript: whichCrypto(2);");
+        var header = document.getElementsByClassName("page-header")[0]
+        header.innerHTML = "Ethereum Buy Recommendation"
+    } else {
+        crypto = "BTC";
+        var button = document.getElementById("switch").setAttribute("onClick", "javascript: whichCrypto(1);");
+        var header = document.getElementsByClassName("page-header")[0]
+        header.innerHTML = "Bitcoin Buy Recommendation"
+    }
+    fetchPrices(crypto);
+    return crypto;
+}
+
 async function fetchBitcoinPrice(url) {
     try {
         let res = await fetch(url);
@@ -9,10 +27,13 @@ async function fetchBitcoinPrice(url) {
     }
 }
 
-urls = ["https://min-api.cryptocompare.com/data/price?fsym=BTC&tsyms=USD,JPY,EUR", "https://api.blockchain.com/v3/exchange/tickers/BTC-USD"]
+// urls = ["https://min-api.cryptocompare.com/data/price?fsym=" + crypto + "&tsyms=USD", "https://api.blockchain.com/v3/exchange/tickers/" + crypto + "-USD"]
 
-async function fetchPrices(urls) {
+async function fetchPrices(crypto) {
+    urls = ["https://min-api.cryptocompare.com/data/price?fsym=" + crypto + "&tsyms=USD", "https://api.blockchain.com/v3/exchange/tickers/" + crypto + "-USD"]
+
     try {
+        console.log(urls[0])
         var exchange1 = await fetchBitcoinPrice(urls[0])
         console.log(exchange1);
 
@@ -49,8 +70,8 @@ function setPrices(price1, price2) {
     }
 
 }
-fetchPrices(urls);
-var interval = 5000
-setInterval(() => {
-    fetchPrices(urls);
-}, interval);
+fetchPrices(crypto);
+// var interval = 5000
+// setInterval(() => {
+//     fetchPrices(crypto);
+// }, interval);
