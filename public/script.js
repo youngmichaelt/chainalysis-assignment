@@ -20,14 +20,12 @@ async function fetchBitcoinPrice(url) {
     try {
         let res = await fetch(url);
         const data = await res.json();
-        // console.log(data);
         return data;
     } catch (error) {
-        // console.log(error);
+        console.log(error);
     }
 }
 
-// urls = ["https://min-api.cryptocompare.com/data/price?fsym=" + crypto + "&tsyms=USD", "https://api.blockchain.com/v3/exchange/tickers/" + crypto + "-USD"]
 
 async function fetchPrices(crypto) {
     urls = ["https://min-api.cryptocompare.com/data/price?fsym=" + crypto + "&tsyms=USD", "https://api.blockchain.com/v3/exchange/tickers/" + crypto + "-USD"]
@@ -70,8 +68,8 @@ function setPrices(price1, price2) {
     }
 
 }
-fetchPrices(crypto);
-// var interval = 5000
-// setInterval(() => {
-//     fetchPrices(crypto);
-// }, interval);
+// fetchPrices(crypto);
+var interval = 5000
+setInterval(() => {
+    fetchPrices(crypto);
+}, interval);
