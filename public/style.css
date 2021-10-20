@@ -1,0 +1,11 @@
+@font-face {
+    font-family: Delicious;
+    src: url('./Trashfort-vmAX7.ttf');
+}
+
+body {
+    background-image: url("https://static.vecteezy.com/system/resources/previews/002/078/291/large_2x/crumpled-paper-background-free-photo.jpg");
+    background-size: cover;
+    font-weight: bolder;
+    /* text-align: center; */
+}
