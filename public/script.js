@@ -2,10 +2,10 @@ async function fetchBitcoinPrice(url) {
     try {
         let res = await fetch(url);
         const data = await res.json();
-        console.log(data);
+        // console.log(data);
         return data;
     } catch (error) {
-        console.log(error);
+        // console.log(error);
     }
 }
 
@@ -50,7 +50,7 @@ function setPrices(price1, price2) {
 
 }
 fetchPrices(urls);
-// var interval = 5000
-// setInterval(() => {
-//     fetchPrices(urls);
-// }, interval);
+var interval = 5000
+setInterval(() => {
+    fetchPrices(urls);
+}, interval);
