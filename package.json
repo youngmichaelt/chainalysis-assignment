@@ -1,0 +1,27 @@
+{
+    "name": "chainalysis-assignment",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "dependencies": {
+        "express": "^4.17.1"
+    },
+    "devDependencies": {
+        "jest": "^27.3.1",
+        "supertest": "^6.1.6"
+    },
+    "scripts": {
+        "test": "jest"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/youngmichaelt/chainalysis-assignment.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/youngmichaelt/chainalysis-assignment/issues"
+    },
+    "homepage": "https://github.com/youngmichaelt/chainalysis-assignment#readme"
+}
