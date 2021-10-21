@@ -22,7 +22,7 @@ Also, be sure to have `git` available in your PATH, `npm` might need it (You can
     $ npm app
     $ Go to localhost:3000 in your browser
 
-##Questions
+## Questions
 
   1. I took short cuts in terms of TDD and functionality. I only had time to create one test for my app.js file and did not have time to implement sell functionality.
   2. Work has kept me busy so I have not had time to over design this project.
