@@ -1,0 +1,52 @@
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<head>
+    <link href="/public/style.css" rel="stylesheet" type="text/css" />
+    <script src="/public/script.js"></script>
+    <title>Buy Crypto</title>
+</head>
+
+<body>
+
+    <header class="page-header" style="text-align: center;">Bitcoin Buy Recommendation</header>
+    <div style="text-align: center;">
+
+        <div class="exchange" id="exchange1">
+            <h1>Blockchain.com</h1>
+            <!-- <div class="buy">
+                <h1>Buy</h1>
+            </div> -->
+            <h1 style="position: absolute; left: 0px;">Buy Price</h1>
+            <div class="price">
+
+                <h1 id="price1"></h1>
+            </div>
+
+        </div>
+        <div class="arrow">
+            <!-- <p id="" style="font-size: 25px;">Buy</p> -->
+            <h1 id="arrow"></h1>
+        </div>
+        <div class="exchange" id="exchange2">
+            <h1>Cryptocompare.com</h1>
+
+            <div class="price">
+                <h1 id="price2"></h1>
+            </div>
+        </div>
+
+
+
+    </div>
+
+    <div style="text-align: center;">
+        <button id="switch" onclick="whichCrypto(1)">Ethereum Prices</button>
+        <p style="font-size: 50px;">The arrow points to the lowest buy price.</p>
+    </div>
+
+
+</body>
+
+</html>
