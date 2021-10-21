@@ -1,9 +1,9 @@
 # chainalysis-assignment
-This is the repository for an assignment for Chainanlysis software engineering opportunites.
+This is the repository for the Chainanlysis software engineering assignment.
 ---
 ## Requirements
 
-For development, you will only need Node.js and npm, installed in your environement.
+For testing, you will only need Node.js and npm, installed in your environement.
 
 ### Node
 - #### Node installation on Windows
